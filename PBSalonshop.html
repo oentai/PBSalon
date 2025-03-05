@@ -5,7 +5,7 @@
         <script>
             window.onload=function(){
                 let url='https://calendar.google.com/calendar/embed';
-                document.getElementById('ifrm').src=url+window.location.search+'@resource.calendar.google.com&ctz=Asia%2FTokyo&mode=WEEK&rnd='+Math.random()
+                document.getElementById('ifrm').src=url+window.location.search.replace(/src=/,'src=c_')+'@resource.calendar.google.com&ctz=Asia%2FTokyo&mode=WEEK&rnd='+Math.random()
             }
         </script>
         <style>
